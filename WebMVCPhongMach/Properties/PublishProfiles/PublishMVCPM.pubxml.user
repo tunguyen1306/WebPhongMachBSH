@@ -625,13 +625,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/05/2016 15:18:30</publishTime>
     </File>
     <File Include="Views/Shared/MasterLayout.cshtml">
-      <publishTime>01/08/2016 15:22:37</publishTime>
+      <publishTime>01/13/2016 10:56:00</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>12/23/2015 21:06:31</publishTime>
     </File>
     <File Include="Views/Slide/Slide.cshtml">
-      <publishTime>01/05/2016 15:18:03</publishTime>
+      <publishTime>01/13/2016 10:54:54</publishTime>
     </File>
     <File Include="Views/TypeNew/TypeNew.cshtml">
       <publishTime>01/08/2016 23:38:06</publishTime>
