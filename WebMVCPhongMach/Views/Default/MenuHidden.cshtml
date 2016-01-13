@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebMVCPhongMach.Models.tbl_menu_PM> 
+<div class="swipe">
+    <div class="swipe-menu">
+     
+        <ul class="links">
+            @foreach (var item in Model)
+            {
+                <li class="first"><a href="@item.Link_menu_PM" title="My Account">@item.Name_menu_PM</a></li>
+            }
+        </ul>
+
+
+
+
+
+
+       
+    </div>
+</div>
+
+<div class="top-icon-menu">
+    <div class="swipe-control"><i class="fa fa-align-justify"></i></div>
+   
+    <span class="clear"></span>
+</div>

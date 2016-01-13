@@ -1,0 +1,121 @@
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.dll.config
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.pdb
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Antlr3.Runtime.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.SqlServer.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Google.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Web.Infrastructure.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Newtonsoft.Json.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Owin.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Helpers.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Mvc.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Optimization.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Razor.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Deployment.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Razor.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebGrease.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Helpers.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Mvc.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Optimization.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Razor.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Deployment.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Razor.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Antlr3.Runtime.pdb
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Newtonsoft.Json.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.SqlServer.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Google.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.csprojResolveAssemblyReference.cache
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.pdb
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.dll.config
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebMVCPhongMach.pdb
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Antlr3.Runtime.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.SqlServer.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Newtonsoft.Json.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Owin.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Helpers.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Mvc.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Optimization.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Razor.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Razor.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\WebGrease.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Helpers.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Mvc.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Optimization.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.Razor.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\System.Web.WebPages.Razor.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Antlr3.Runtime.pdb
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Newtonsoft.Json.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\EntityFramework.SqlServer.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.csprojResolveAssemblyReference.cache
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.pdb
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.Mvc.dll
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.xml
+C:\Users\tu\Desktop\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.Mvc.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.Mvc.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\PagedList.Mvc.xml
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\MvcAjaxPager.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\MvcPaging.dll
+D:\Dropbox\Cong Ty\WebSite\WebPhongMach\WebPhongMachMVC\WebMVCPhongMach\bin\MvcPaging.xml

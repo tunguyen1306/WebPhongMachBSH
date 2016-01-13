@@ -1,0 +1,59 @@
+﻿
+@using System.Configuration
+@using MvcPaging
+@using PagedList
+@using WebMVCPhongMach.Models
+@using PagedList.Mvc
+
+@model PagedList.IPagedList<tbl_new_PM>
+@{
+    PhongMachEntities db = new PhongMachEntities();
+}
+<div class="col-left sidebar col-xs-12 col-sm-3">
+    <div class="block last_block first">
+        <div class="menu-icon-style cusnewtoday">Tin Tức Trong Ngày</div>
+        <div class="blog-list cusblocklist" style="float: left;">
+            @foreach (var item in Model)
+            {
+                <div class="item cusli" style="float: left;">
+                    <div class="postWrapper">
+                        <div class="postTitle">
+                            <img class="cusimgnewtoday" src='@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.Split('_')[0]/@item.Img_new_PM' />
+
+                            <h2 class="cush2newtoday">
+
+                                @Html.ActionLink(@item.Title_new_PM, "Detail", "Detail", new { id = item.Title_new_PM.UrlFriendly() + "-" + item.ID_new_PM }, htmlAttributes: new { @class = "cus" })
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="actions custag">
+            @Html.ActionLink("Xem Thêm", "NewOrtherPaging", "NewOrther", new { id = 6 }, htmlAttributes: new { @class = "cusaxemthem" })
+        </div>
+    </div>
+</div>
+<div class="col-left sidebar col-xs-12 col-sm-3">
+    <div class="block block-tags first">
+        <div class="block-title">
+            <strong><span>Thẻ</span></strong>
+            <span class="toggle"></span>
+        </div>
+        <div class="block-content">
+            <ul class="tags-list">
+                <li><a style="font-size:75%;" href="#">Phòng Khám</a></li>
+                <li><a style="font-size:75%;" href="#">Tai Mũi Họng</a></li>
+                <li><a style="font-size:110%;" href="#">Viêm mũi dị ứng</a></li>
+                <li><a style="font-size:145%;" href="#">Viêm họng</a></li>
+                <li><a style="font-size:75%;" href="#">Cách phòng ngừa viêm họng</a></li>
+                <li><a style="font-size:75%;" href="#">Cách phòng viêm mũi dị ứng</a></li>
+                <li><a style="font-size:110%;" href="#">phòng khám tai mũi họng</a></li>
+                <li><a style="font-size:75%;" href="#">phòng khám uy tín</a></li>
+                <li><a style="font-size:145%;" href="#">phòng khám tai mũi họng uy tín</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>

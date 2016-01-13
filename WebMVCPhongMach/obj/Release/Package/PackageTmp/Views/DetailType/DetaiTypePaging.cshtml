@@ -1,0 +1,67 @@
+﻿@using System.Configuration
+@using MvcPaging
+@using PagedList
+@using WebMVCPhongMach.Models
+@using PagedList.Mvc
+
+@model PagedList.IPagedList<tbl_new_PM>
+@{
+    PhongMachEntities db = new PhongMachEntities();
+}
+<div class="padding-s" id="loader">
+
+
+
+    <div id="messages_product_view">
+    </div>
+    <div class="page-title category-title">
+        <h2>Tin Tức</h2>
+    </div>
+
+    <ul class="blog-list">
+        @foreach (var item in Model)
+        {
+            <li class="item cuslidef">
+                <div class="postWrapper">
+                    <div class="postTitle">
+                        <h2>
+
+                            @Html.ActionLink(@item.Title_new_PM, "Detail", "Detail", new { id = item.Title_new_PM.UrlFriendly() + "-" + item.ID_new_PM }, htmlAttributes: new { @class = "cus" })
+                        </h2>
+                    </div>
+                    <div class="postDetails">
+                        <span class="postDetails-date"><i class="fa fa-clock-o"></i> @item.Ceatedtime_new_PM</span>
+                        <span class="postDetails-coment">
+                            <i class="fa fa-comment-o"></i>
+                            <a href="#">
+                                0
+                            </a>
+                        </span>
+                        <span class="tags postDetails-tags"></span>
+                        <span class="postDetails-user">
+                            <i class="fa fa-user"></i>
+                            Posted By admin admins
+                        </span>
+                    </div>
+                    <div class="postContent">
+                        <img style="float: left; margin-right: 20px;" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM" alt="@item.Title_new_PM" />
+                        <p class="cusp" style="white-space: pre-line;font-size: 17px;;">@item.Shortdescription_new_PM</p>
+
+                        @Html.ActionLink("Xem Thêm", "Detail", "Detail", new { id = item.Title_new_PM.UrlFriendly() + "-" + item.ID_new_PM }, htmlAttributes: new { @class = "aw-blog-read-more" })
+
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+    <div class="toolbar">
+
+        <div class="limiter">
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("PartialDemo", "DetailType", new { page }),
+                        PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { UpdateTargetId = "loader" }))
+
+
+        </div>
+    </div>
+</div>
+

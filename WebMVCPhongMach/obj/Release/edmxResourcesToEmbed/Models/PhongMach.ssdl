@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XBMuabannhadatbackup_cuaTuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_menu_PM">
+    <Key>
+      <PropertyRef Name="ID_menu_PM" />
+    </Key>
+    <Property Name="ID_menu_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name_menu_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Link_menu_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Type_menu_PM" Type="int" />
+    <Property Name="Status_menu_PM" Type="int" />
+    <Property Name="Order_menu_PM" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_new_PM">
+    <Key>
+      <PropertyRef Name="ID_new_PM" />
+    </Key>
+    <Property Name="ID_new_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title_new_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status_new_PM" Type="int" />
+    <Property Name="Shortdescription_new_PM" Type="ntext" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="Img_new_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Order_new_PM" Type="int" />
+    <Property Name="Img1_new_PM" Type="int" />
+    <Property Name="Img1_new_PM_" Type="nvarchar" MaxLength="200" />
+    <Property Name="Ceatedtime_new_PM" Type="date" />
+    <Property Name="Type_new_PM" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_silde_PM">
+    <Key>
+      <PropertyRef Name="ID_silde_PM" />
+    </Key>
+    <Property Name="ID_silde_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name_silde_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Img_silde_PM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status_silde_PM" Type="int" />
+    <Property Name="Order_silde_PM" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_type_new_PM">
+    <Key>
+      <PropertyRef Name="ID_type_new_PM" />
+    </Key>
+    <Property Name="ID_type_new_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="XBMuabannhadatbackup_cuaTuModelStoreContainer">
+    <EntitySet Name="tbl_menu_PM" EntityType="Self.tbl_menu_PM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_type_new_PM" EntityType="Self.tbl_type_new_PM" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

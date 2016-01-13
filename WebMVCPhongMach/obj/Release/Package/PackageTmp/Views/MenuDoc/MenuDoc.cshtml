@@ -1,0 +1,25 @@
+﻿@using WebMVCPhongMach.Models
+@{
+    PhongMachEntities db = new PhongMachEntities();
+    var DataMenuDoc = (from datamenu in db.tbl_menu_PM
+                       where datamenu.Type_menu_PM == 2 && datamenu.Status_menu_PM == 1
+                       orderby datamenu.Order_menu_PM
+                       select datamenu).ToList();}
+<div class="col-left sidebar col-xs-12 col-sm-3">
+    <div class="nav-container block">
+        <div class="menu-icon-style">Danh Mục</div>
+        <ul class="sf-menu-phone item">
+            @foreach (var item in DataMenuDoc)
+            {
+                <li class="level0 nav-1 first level-top">
+                    <a href="@item.Link_menu_PM" class="level-top">
+                        <span>@item.Name_menu_PM</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+   
+</div>
+
+

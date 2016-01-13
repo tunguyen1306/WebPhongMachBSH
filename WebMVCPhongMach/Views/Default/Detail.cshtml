@@ -1,0 +1,167 @@
+﻿@using System.Configuration
+@using WebMVCPhongMach.Models
+
+@model IEnumerable<tbl_new_PM>
+@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+    PhongMachEntities db = new PhongMachEntities();
+}
+<div class="col-main col-xs-12 col-sm-9">
+    <div class="padding-s">
+        <div class="breadcrumbs">
+            <ul>
+                <li class="home">
+                   @Html.ActionLink("Trang chủ", "Default", "Default",htmlAttributes:new {@titile="Trở về trang chủ"}) 
+                    <span>&gt;</span>
+                </li>
+                <li class="product">
+                    <strong>
+                        
+                    </strong>
+                </li>
+            </ul>
+        </div>
+        <div id="messages_product_view"></div>
+
+        <div itemtype="http://schema.org/Product" itemscope="" class="product-view">
+            @foreach(var item in Model)
+            {
+                 <div class="product-essential">
+
+
+                <div class="product-img-box">
+                    <style type="text/css">
+                        .cloud-zoom-big {
+                            height: 300px !important;
+                            width: 300px !important;
+                        }
+                    </style>
+                    <div class="product-box-customs">
+                        <p class="product-image">
+                            <div style="top: 0px; z-index: 99; position: relative;" id="wrap">
+                                <a rel="position:'right',showTitle:1,titleOpacity:0.5,lensOpacity:0.5,adjustX: 10,adjustY:-4,zoomWidth:300,zoomHeight:300" id="zoom1" class="cloud-zoom" href="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM" style="position: relative; display: block;">
+
+                                    <img title="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM" class="big cusimg" style="display: block;">
+
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; opacity: 0; z-index: 99; position: absolute; width: 235px; height: 235px; left: 0px; top: 0px; cursor: move;" class="mousetrap"></div>
+                            </div>
+                            <span></span>
+                        </p>
+                        <div class="more-views">
+                            <h2>More Views</h2>
+                            <div class="container-slider">
+                                <ul class="slider tumbSlider-none">
+                                    <li>
+                                        <a rel="useZoom: 'zoom1', smallImage: '@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM' " title="" class="cloud-zoom-gallery" href="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                            <img alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                        </a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    </li>
+                                    <li>
+                                        <a rel="useZoom: 'zoom1', smallImage: '@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM
+                                            '" title="" class="cloud-zoom-gallery" href="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                            <img alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                        </a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gallery-swipe-content">
+                            <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 0px;">
+                                    <ul class="gallery-swipe" id="gallery-swipe" style="width: 315%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <li style="float: left; list-style: outside none none; position: relative; width: 100px;">
+                                            <a title="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" href="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                                <img alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM">
+                                            </a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bx-controls bx-has-controls-direction">
+                                    <div class="bx-controls-direction">
+                                        <a href="" class="bx-prev disabled">Prev</a>
+                                        <a href="" class="bx-next disabled">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-shop">
+                    <div class="product-name">
+                        <h1 itemprop="name">
+                            @*<%#Eval("Title_new_PM") %>*@
+                        </h1>
+                    </div>
+
+
+
+                    <div class="clear"></div>
+                    <div class="short-description">
+                        <h2>Tóm tắt</h2>
+                        <div itemprop="description" class="std">
+                            <p style="white-space: pre-line">
+                                @*<%#Eval("Shortdescription_new_PM") %>*@
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+
+
+
+                    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+
+
+
+                        @*Face Book*@
+                        <div id="fb-root"></div>
+                        <script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=1706744036228892";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-href="http://phongkhambacsihon.com/" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>
+                        @*Face Book*@
+                        <div class="clear">
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="clearer"></div>
+
+
+            </div>
+                         <div class="product-collateral">
+                <div class="box-collateral box-description">
+                    <h2>Mô tả chi tiết<span class="toggle"></span></h2>
+                    <div class="box-collateral-content">
+                        <div class="std">
+                            <p style="white-space: pre-line">
+                                @*<%#Eval("Description") %>*@
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+    </div>
+</div>

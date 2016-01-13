@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebMVCPhongMach.Models.tbl_menu_PM> 
+<div class="header-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header">
+                    <h1 class="logo"><strong>Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn</strong><a href="#" title="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" class="logo"><img src="~/Content/img/logo-hospital-hi.png" alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" /></a> <img class="cusllv" src="~/Content/img/llvnew1.png" alt="Phòng Khám Tai Mũi Họng Bác Sĩ Nguyễn Minh hảo Hớn" /></h1>
+
+                    <div class="clear"></div>
+                    <div class="quick-access">
+                        <ul class="links">
+                            @foreach(var item in Model)
+                            { 
+                                <li class="first"><a href="@item.Link_menu_PM" title="My Account">@item.Name_menu_PM</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                @*@Html.Action("Default", "Default")*@
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+﻿
+@model  WebMVCPhongMach.Models.EmailContact
+@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+@section head{
+
+    <meta property="og:title" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn" />
+
+    <meta property="og:url" content="http://phongkhambacsihon.com/" />
+    <meta name="description" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa">
+    <meta property="og:description" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa" />
+    <meta name="keywords" content="Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa" />
+    <meta property="og:image" content="http://phongkhambacsihon.com/Content/img/logo-hospital-hi.png" />
+
+}
+<div class="col-main col-xs-12 col-sm-9 cusmin-height">
+    <div class="padding-s">
+
+  
+       
+ 
+        <div id="messages_product_view"></div>
+        <div class="page-title">
+            <h1>Liên Hệ Phòng Khám Bác Sĩ Hớn</h1>
+        </div>
+        <div class="contact-block clearfix">
+            <div class="contact-left">
+                <h2>Địa chỉ</h2>
+                <ul>
+                    <li>
+                        <h3>Địa chỉ 1:</h3>
+                        <p>48/4 Hồ Biểu Chánh ,P.11, Q.Phú Nhuận </p>
+                    </li>
+                    <li>
+                        <h3>Điện Thoại:</h3>
+                        <p>
+                            0989-030-050
+                      
+                        </p>
+                    </li>
+                    <li class="last">
+                        <h3>Địa chỉ 2:</h3>
+                        <p>155B Trần Quốc Thảo, Quận 3, TP. HCM</p>
+                    </li>
+                </ul>
+            </div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <div id="contactForm">
+                    <div class="fieldset">
+                        <h2 class="legend">Thông Tin Liên Hệ</h2>
+                        <ul class="form-list">
+                            <li class="fields">
+                                <div class="field">
+                                    <label class="required" for="name"><em>*</em>Tên</label>
+                                    <div class="input-box">
+                                        @*<input type="text" class="input-text required-entry form-control" value="" title="Name" id="name" name="name">*@
+                                        @Html.TextBoxFor(m => m.Name, new {@class = "input-text required-entry form-control",@name="Name"})
+                                        @Html.ValidationMessageFor(t => t.Name)
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="required" for="email"><em>*</em>Email</label>
+                                    <div class="input-box">
+                                        @*<input type="text" class="input-text required-entry validate-email form-control" value="" title="Email" id="email" name="email">*@
+                                        @Html.TextBoxFor(m => m.Email_, new { @class = "input-text required-entry form-control", @name = "Email_" })
+                                        @Html.ValidationMessageFor(m => m.Email_)
+                                    </div>
+                                </div>
+                                <div class="field last">
+                                    <label for="telephone">Số điện thoại</label>
+                                    <div class="input-box">
+                                        @*<input type="text" class="input-text form-control" value="" title="Telephone" id="telephone" name="telephone">*@
+                                        @Html.TextBoxFor(m => m.Phone, new { @class = "input-text required-entry form-control", @name = "Phone" })
+                                        @Html.ValidationMessageFor(m => m.Phone)
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wide">
+                                <label class="required" for="comment"><em>*</em>Nội dung tin nhắn</label>
+                                <div class="input-box">
+                               
+                                    @*<textarea rows="3" cols="5" class="required-entry input-text form-control" title="Comment" id="comment" name="comment"></textarea>*@
+                                    @Html.TextAreaFor(m => m.content, new { @class = "required-entry input-text form-control", @name = "content" })
+                                    @Html.ValidationMessageFor(m => m.content)
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons-set">
+                        <p class="required">* Không được bỏ trống</p>
+                        <input type="text" style="display: none !important;" value="" id="hideit" name="hideit">
+                 
+                        <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
+                        @*<span><span><input type="submit" class="button" value="Gửi tin nhắn" /></span></span>*@
+                    </div>
+                </div>
+            }
+        </div>
+   
+    
+    </div>
+</div>
+

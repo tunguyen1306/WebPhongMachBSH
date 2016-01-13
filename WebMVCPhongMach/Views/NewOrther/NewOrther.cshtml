@@ -1,0 +1,34 @@
+﻿@using System.Configuration
+@using PagedList
+@using WebMVCPhongMach.Models
+@using System.Linq;
+@using System.Collections.Generic;
+@model IEnumerable<tbl_new_PM>
+@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+    PhongMachEntities db = new PhongMachEntities();
+
+    var dataNew = (from datanew in db.tbl_new_PM where datanew.Status_new_PM == 1 && (datanew.Type_new_PM == 5) orderby datanew.ID_new_PM descending select datanew).ToList();
+    var dataNewOrther = (from dataorther in db.tbl_new_PM where dataorther.Status_new_PM == 1 &&( dataorther.Type_new_PM == 1 || dataorther.Type_new_PM == 2 || dataorther.Type_new_PM == 3) orderby dataorther.ID_new_PM descending select dataorther).ToList();
+
+}
+@section head{
+
+    <meta property="og:title" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn" />
+
+    <meta property="og:url" content="http://phongkhambacsihon.com/" />
+    <meta name="description" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa">
+    <meta property="og:description" content="Phòng khám tai mũi họng bác sĩ Nguyễn Minh Hảo Hớn Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa" />
+    <meta name="keywords" content="Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng,viêm tai giữa" />
+    <meta property="og:image" content="http://phongkhambacsihon.com/Content/img/logo-hospital-hi.png" />
+
+}
+<div class="col-main col-xs-12 col-sm-9 cusmin-height">
+
+    @Html.Partial("~/Views/Default/Defaultpaging.cshtml", dataNew.ToPagedList(1, 10))
+    @Html.Partial("~/Views/NewOrther/NewOrtherPaging.cshtml", dataNewOrther.ToPagedList(1, 10))
+
+</div>
+
+
+

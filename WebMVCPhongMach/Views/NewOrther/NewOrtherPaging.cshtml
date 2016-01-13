@@ -1,0 +1,46 @@
+﻿@using System.Configuration
+@using MvcPaging
+@using PagedList
+@using WebMVCPhongMach.Models
+
+
+@model PagedList.IPagedList<tbl_new_PM>
+@{
+    PhongMachEntities db = new PhongMachEntities();
+    var dataNewOrther = (from data in db.tbl_new_PM where data.Status_new_PM == 1 && data.Type_new_PM == 5 orderby data.ID_new_PM select data).ToList().ToPagedList(pageNumber: 1, pageSize: 10);
+}
+
+<div class="padding-s" id="loader">
+
+
+
+    <div id="messages_product_view">
+    </div>
+    <div class="page-title category-title">
+        <h2>Tin Tức Khác</h2>
+    </div>
+    <ul class="blog-list cusboglist" style="float: left;">
+        @foreach (var item in dataNewOrther)
+        {
+            <li class="item cuslineworther " style="float: left;">
+                <div class="postWrapper" style="float: left;">
+
+                    <div class="postTitle" style="float: left;">
+
+                        <img class="cusimgneworther" style="float: left;" src="@ConfigurationManager.AppSettings["domain"]@item.Img_new_PM.ToString().Split('_')[0]/@item.Img_new_PM" alt="@item.Title_new_PM" />
+
+                        <h2 class="cush2neworther" style="float: left;">
+
+                            @Html.ActionLink(@item.Title_new_PM, "Detail", "Detail", new { id = item.Title_new_PM.UrlFriendly() + "-" + item.ID_new_PM }, htmlAttributes: new { @class = "cus" ,@id="cusalick2" })
+                        </h2>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+    <div class="actions custag">
+     
+        @Html.ActionLink("Xem Thêm", "NewOrtherPaging", "NewOrther", new { id =5 }, htmlAttributes: new { @class = "cusaxemthem" })
+    </div>
+</div>
+

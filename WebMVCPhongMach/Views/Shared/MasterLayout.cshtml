@@ -1,0 +1,220 @@
+﻿
+@using System.Configuration
+@using PagedList
+@using WebMVCPhongMach.Models
+@{
+    PhongMachEntities db=new PhongMachEntities();
+    var dataMenuNgang = (from datamenu in db.tbl_menu_PM
+                         where datamenu.Type_menu_PM == 1 && datamenu.Status_menu_PM == 1
+                         orderby datamenu.Order_menu_PM
+        select datamenu );
+    var dataMenuDoc = (from datamenu in db.tbl_menu_PM
+                       where datamenu.Type_menu_PM == 2 && datamenu.Status_menu_PM == 1
+                       orderby datamenu.Order_menu_PM
+                select datamenu).ToList();
+    var dataMenuFooter = (from datamenuFooter in db.tbl_menu_PM
+                          where datamenuFooter.Type_menu_PM == 3 && datamenuFooter.Status_menu_PM == 1
+                          orderby datamenuFooter.Order_menu_PM
+                          select datamenuFooter).ToList();
+    var dataSlider = (from dataslider in db.tbl_silde_PM
+                      where dataslider.Status_silde_PM == 1
+                      orderby dataslider.Order_silde_PM
+                      select dataslider).ToList();
+                       
+                        var dataNewToday = (from datanewtd in db.tbl_new_PM
+                                            where datanewtd.Status_new_PM == 1 && datanewtd.Type_new_PM == 6
+                                            orderby datanewtd.ID_new_PM, datanewtd.Order_new_PM
+                                            select datanewtd).ToList();
+                       
+                       
+                       
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Phòng khám Bác Sĩ Hớn Chuyên Khoa Tai Mũi Họng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="keywords" content="Phòng Khám,Tai mũi họng,Bác sĩ,viêm mũi dị ứng,viêm họng" />
+   
+    <meta name="robots" content="INDEX,FOLLOW" />
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    @*<meta name="description" content="Phòng khám Bác Sĩ Hớn Chuyên Khoa Tai Mũi Họng » phongkhamtaimuihong.com ✓ chữa bệnh uy tín ✓ chuyên chữa trị tai mũi họng." />
+    <meta property="og:title" content="Phòng khám Bác Sĩ Hớn Chuyên Khoa Tai Mũi Họng" />
+    <meta property="og:description"  content="Phòng khám Bác Sĩ Hớn Chuyên Khoa Tai Mũi Họng » phongkhamtaimuihong.com ✓ chữa bệnh uy tín ✓ chuyên chữa trị tai mũi họng." />
+    <meta content="1706744036228892" property="fb:app_id" />
+    <meta content="website" property="og:type" />
+    <meta property="og:url"  content="http://phongkhambacsihon.com/" />*@
+    @RenderSection("head", false)
+    <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700&ampsubset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="/Content/css/calendar-win2k-1.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/font-awesome.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/jquery.bxslider.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/photoswipe.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/bootstrap.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/extra_style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/superfish.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/camera.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/widgets.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/ajaxsearch.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/jquery.multiselect.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/prettify.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/cloud-zoom.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/catalogsale.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/ajaxlogin.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/print.css" media="print" />
+    <link href="/Content/css/CusWeb.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/css/default.css" type="text/css" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-71594023-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body class="ps-static  cms-index-index cms-home">
+    <div class="wrapper en-lang-class">
+
+        <div class="page">
+            <div class="shadow"></div>
+            <div class="swipe-left"></div>
+            @*Menu Hidden*@
+            @Html.Partial("~/Views/MenuHidden/MenuHidden.cshtml", dataMenuNgang)
+
+            @*End Menu Hidden*@
+
+            @*Header*@
+            @Html.Partial("~/Views/Header/Header.cshtml", dataMenuNgang)
+            @*End Header*@
+
+            @*Menu Ho*@
+            @Html.Partial("~/Views/MenuHo/MenuHo.cshtml", dataMenuDoc)
+          
+            @*End Menu Ho*@
+
+            <div class="clear"></div>
+
+            @*Slide*@
+            <div class="fluid_container_wrap">
+                <div class="fluid_container">
+                    @Html.Partial("~/Views/Slide/Slide.cshtml", dataSlider)
+                </div>
+            </div>
+
+           
+
+            @*End Slide*@
+
+            <div class="clear"></div>
+
+            @*Type New*@
+            @Html.Partial("~/Views/TypeNew/TypeNew.cshtml")
+            @*End Type New*@
+
+            @*Content*@
+
+            <div class="main-container col2-left-layout">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="main">
+
+                                <div class="row">
+
+
+                                    @RenderBody()
+                                    @Html.Partial("~/Views/MenuDoc/MenuDoc.cshtml", dataMenuDoc)
+                                    @Html.Partial("~/Views/NewToDay/NewToDay.cshtml", dataNewToday.ToPagedList(pageNumber:1,pageSize:10))
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*End Content*@
+
+            @*Footer*@
+            @Html.Partial("~/Views/Footer/Footer.cshtml", dataMenuFooter)
+            @*End Footer*@
+
+        </div>
+    </div>
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", false)*@
+    <script type="text/javascript" src="/Content/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery_noconflict.js"></script>
+    <script type="text/javascript" src="/Content/js/prototype.js"></script>
+    <script type="text/javascript" src="/Content/js/ccard.js"></script>
+    <script type="text/javascript" src="/Content/js/validation.js"></script>
+    <script type="text/javascript" src="/Content/js/builder.js"></script>
+    <script type="text/javascript" src="/Content/js/effects.js"></script>
+    <script type="text/javascript" src="/Content/js/dragdrop.js"></script>
+    <script type="text/javascript" src="/Content/js/controls.js"></script>
+    <script type="text/javascript" src="/Content/js/slider.js"></script>
+    <script type="text/javascript" src="/Content/js/js.js"></script>
+    <script type="text/javascript" src="/Content/js/form.js"></script>
+    <script type="text/javascript" src="/Content/js/translate.js"></script>
+    <script type="text/javascript" src="/Content/js/cookies.js"></script>
+    <script src="/Content/js/camera.js"> </script>
+    <script src="/Content/js/CusWeb.js"></script>
+    <script type="text/javascript" src="/Content/js/product.js"></script>
+    <script type="text/javascript" src="/Content/js/configurable.js"></script>
+    <script type="text/javascript" src="/Content/js/calendar.js"></script>
+    <script type="text/javascript" src="/Content/js/calendar-setup.js"></script>
+    <script type="text/javascript" src="/Content/js/ajaxsearch.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ul.js"></script>
+    <script type="text/javascript" src="/Content/js/prettify.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.multiselect.js"></script>
+    <script type="text/javascript" src="/Content/js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="/Content/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.carouFredSel-6.2.1.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.unveil.js"></script>
+    <script type="text/javascript" src="/Content/js/cherry-fixed-parallax.js"></script>
+    <script type="text/javascript" src="/Content/js/tm-stick-up.js"></script>
+    <script type="text/javascript" src="/Content/js/superfish.js"></script>
+    <script type="text/javascript" src="/Content/js/scripts.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/Content/js/bundle.js"></script>
+    <script type="text/javascript" src="/Content/js/carousel.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui-1-10-4.js"></script>
+    <script type="text/javascript" src="/Content/js/ajaxlogin.js"></script>
+    <script type="text/javascript" src="/Content/js/msrp.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebMVCPhongMach.Models.tbl_menu_PM>  
+<div class="nav-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="sf-menu-block">
+                    <div id="menu-icon" class="menu-icon-style">Danh Mục</div>
+
+                    <ul class="sf-menu-phone">
+                        @foreach (var item in Model)
+                        {
+                            <li class="level0 nav-1 first level-top"><a href="#" class="level-top"><span>@item.Name_menu_PM</span></a></li>
+
+                        }
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

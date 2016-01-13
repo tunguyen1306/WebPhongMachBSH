@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="XBMuabannhadatbackup_cuaTuModelStoreContainer" CdmEntityContainer="XBMuabannhadatbackup_cuaTuEntities">
+    <EntitySetMapping Name="tbl_menu_PM">
+      <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_menu_PM">
+        <MappingFragment StoreEntitySet="tbl_menu_PM">
+          <ScalarProperty Name="ID_menu_PM" ColumnName="ID_menu_PM" />
+          <ScalarProperty Name="Name_menu_PM" ColumnName="Name_menu_PM" />
+          <ScalarProperty Name="Link_menu_PM" ColumnName="Link_menu_PM" />
+          <ScalarProperty Name="Type_menu_PM" ColumnName="Type_menu_PM" />
+          <ScalarProperty Name="Status_menu_PM" ColumnName="Status_menu_PM" />
+          <ScalarProperty Name="Order_menu_PM" ColumnName="Order_menu_PM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_new_PM">
+      <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_new_PM">
+        <MappingFragment StoreEntitySet="tbl_new_PM">
+          <ScalarProperty Name="ID_new_PM" ColumnName="ID_new_PM" />
+          <ScalarProperty Name="Title_new_PM" ColumnName="Title_new_PM" />
+          <ScalarProperty Name="Status_new_PM" ColumnName="Status_new_PM" />
+          <ScalarProperty Name="Shortdescription_new_PM" ColumnName="Shortdescription_new_PM" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Img_new_PM" ColumnName="Img_new_PM" />
+          <ScalarProperty Name="Order_new_PM" ColumnName="Order_new_PM" />
+          <ScalarProperty Name="Img1_new_PM" ColumnName="Img1_new_PM" />
+          <ScalarProperty Name="Img1_new_PM_" ColumnName="Img1_new_PM_" />
+          <ScalarProperty Name="Ceatedtime_new_PM" ColumnName="Ceatedtime_new_PM" />
+          <ScalarProperty Name="Type_new_PM" ColumnName="Type_new_PM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_silde_PM">
+      <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_silde_PM">
+        <MappingFragment StoreEntitySet="tbl_silde_PM">
+          <ScalarProperty Name="ID_silde_PM" ColumnName="ID_silde_PM" />
+          <ScalarProperty Name="Name_silde_PM" ColumnName="Name_silde_PM" />
+          <ScalarProperty Name="Img_silde_PM" ColumnName="Img_silde_PM" />
+          <ScalarProperty Name="Status_silde_PM" ColumnName="Status_silde_PM" />
+          <ScalarProperty Name="Order_silde_PM" ColumnName="Order_silde_PM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_type_new_PM">
+      <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_type_new_PM">
+        <MappingFragment StoreEntitySet="tbl_type_new_PM">
+          <ScalarProperty Name="ID_type_new_PM" ColumnName="ID_type_new_PM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

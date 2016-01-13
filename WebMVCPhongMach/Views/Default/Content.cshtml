@@ -1,0 +1,107 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<div class="col-main col-xs-12 col-sm-9">
+
+    <div class="padding-s">
+
+
+
+        <div id="messages_product_view">
+        </div>
+        <div class="page-title category-title">
+            <h2>Tin Tức</h2>
+        </div>
+        <div class="toolbar">
+            <div class="pager">
+                <p class="amount">
+                    <strong>4 Item(s)</strong>
+                </p>
+                <div class="limiter">
+                    <label>Show</label>
+                    <select onchange=" setLocation(this.value) ">
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?limit=10">
+                            10
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="sorter">
+                <div class="sort-by">
+                    <div class="right">
+                        <a class="fa fa-arrow-up" href="http://livedemo00.template-help.com/magento_53173/blog/?dir=desc&amp;order=created_time" title="Set Descending Direction"> </a>
+                    </div>
+                    <label>Sort By</label>
+                    <select onchange=" setLocation(this.value) ">
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?dir=asc&amp;order=created_time" selected="selected">
+                            Created At
+                        </option>
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?dir=asc&amp;order=user">
+                            Added By
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <ul class="blog-list">
+            <li class="item">
+                <div class="postWrapper">
+                    <div class="postTitle">
+                        <h2><a href="http://livedemo00.template-help.com/magento_53173/blog/Builder/">Builder truth painful advantage enjoy</a></h2>
+                    </div>
+                    <div class="postDetails">
+                        <span class="postDetails-date"><i class="fa fa-clock-o"></i> 20.02.15</span>
+                        <span class="postDetails-coment">
+                            <i class="fa fa-comment-o"></i>
+                            <a href="http://livedemo00.template-help.com/magento_53173/blog/Builder/#commentBox">
+                                0
+                            </a>
+                        </span>
+                        <span class="tags postDetails-tags"></span>
+                        <span class="postDetails-user">
+                            <i class="fa fa-user"></i>
+                            Posted By admin admins
+                        </span>
+                    </div>
+                    <div class="postContent">
+                        <img style="float: left; margin-right: 20px;" src="http://livedemo00.template-help.com/magento_53173/media/wysiwyg/blog_img/small_4.jpg" alt="" />
+                        <p>This business template is suited for a corporate, advertising, media, design, hosting, it company, agency, studio etc. but it can easily be used for a personal page or a portfolio.</p>
+                        <a class="aw-blog-read-more" href="http://livedemo00.template-help.com/magento_53173/blog/Builder/">Xem Thêm</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="toolbar">
+            <div class="pager">
+                <p class="amount">
+                    <strong>4 Item(s)</strong>
+                </p>
+                <div class="limiter">
+                    <label>Show</label>
+                    <select onchange=" setLocation(this.value) ">
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?limit=10">
+                            10
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="sorter">
+                <div class="sort-by">
+                    <div class="right">
+                        <a class="fa fa-arrow-up" href="http://livedemo00.template-help.com/magento_53173/blog/?dir=desc&amp;order=created_time" title="Set Descending Direction"> </a>
+                    </div>
+                    <label>Sort By</label>
+                    <select onchange=" setLocation(this.value) ">
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?dir=asc&amp;order=created_time" selected="selected">
+                            Created At
+                        </option>
+                        <option value="http://livedemo00.template-help.com/magento_53173/blog/?dir=asc&amp;order=user">
+                            Added By
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

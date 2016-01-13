@@ -1,0 +1,94 @@
+﻿
+@model IEnumerable<WebMVCPhongMach.Models.tbl_menu_PM>
+<div class="footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer">
+                    <p id="back-top"><a href="#top"><span></span></a> </p>
+                    <div class="footer-cols-wrapper">
+                        <div class="footer-col">
+                            <h4>Thông tin</h4>
+                            <div class="footer-col-content">
+                                <ul>
+                                    @foreach (var item in Model)
+                                    {
+                                        <li><a href="@item.Link_menu_PM" title="@item.Name_menu_PM">@item.Name_menu_PM</a></li>
+                                    }
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="footer-col  footer-col last footer-col-ex">
+
+                            <div class="footer-col-content">
+                                <div class="block block-tags last_block">
+                                    <div class="block-title">
+                                        <strong><span>Thẻ</span></strong>
+                                        <span class="toggle"></span>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="tags-list">
+
+                                            <li><a style="font-size:75%;" href="#">Tai Mũi Họng</a></li>
+                                            <li><a style="font-size:110%;" href="#">Viêm mũi dị ứng</a></li>
+                                            <li><a style="font-size:145%;" href="#">Viêm họng</a></li>
+
+                                            <li><a style="font-size:75%;" href="#">Cách phòng viêm mũi dị ứng</a></li>
+                                            <li><a style="font-size:110%;" href="#">phòng khám tai mũi họng</a></li>
+
+                                            <li><a style="font-size:145%;" href="#">phòng khám tai mũi họng uy tín</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer-col last footer-col-ex cusfootercol">
+                            <div class="block block-subscribe">
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=1451210995153249";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-page" data-href="https://www.facebook.com/bacsihaohon/?ref=hl" data-width="1400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <div class="fb-xfbml-parse-ignore">
+                                        <blockquote cite="https://www.facebook.com/bacsihaohon/?ref=hl">
+                                            <a href="https://www.facebook.com/bacsihaohon/?ref=hl">
+                                                Phòng khám Tai Mũi Họng Bác Sĩ Nguyễn Minh Hảo Hớn
+
+                                            </a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="clear"></div>
+                        
+                    </div>
+                    <div class="footer-bottom">
+                        <address>
+                            &copy;
+                            <script type="text/javascript">
+                                            var mdate = new Date();
+                                            document.write(mdate.getFullYear());
+                            </script>Tunguyen.it.dev@gmail.com
+                        </address>
+                        <div class="clear"></div>
+                        <!--{%FOOTER_LINK}-->  							
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
