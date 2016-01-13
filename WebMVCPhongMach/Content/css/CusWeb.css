@@ -127,6 +127,13 @@
   .cusaxemthem {
        margin-left: 200px;
   }
+}  @media (max-width: 1200px) {
+  .cush2newtoday  {
+       width: 105px !important ;
+  }
+  .cusimgnewtoday {
+      width: 40px;
+  }
 }
   .cusmin-height{min-height:550px}
   .contact-left p {
