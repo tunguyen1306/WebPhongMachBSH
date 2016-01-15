@@ -583,7 +583,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/11/2016 22:55:07</publishTime>
     </File>
     <File Include="Views/Detail/Detail.cshtml">
-      <publishTime>01/12/2016 22:09:29</publishTime>
+      <publishTime>01/13/2016 23:56:46</publishTime>
     </File>
     <File Include="Views/DetailType/DetailType.cshtml">
       <publishTime>01/12/2016 23:37:39</publishTime>
