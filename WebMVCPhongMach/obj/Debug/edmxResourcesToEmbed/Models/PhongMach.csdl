@@ -48,5 +48,13 @@
     <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" />
     <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" />
     <EntitySet Name="tbl_type_new_PM" EntityType="Self.tbl_type_new_PM" />
+    <EntitySet Name="tbl_Email" EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_Email" />
   </EntityContainer>
+  <EntityType Name="tbl_Email">
+    <Key>
+      <PropertyRef Name="ID_Email" />
+    </Key>
+    <Property Name="ID_Email" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

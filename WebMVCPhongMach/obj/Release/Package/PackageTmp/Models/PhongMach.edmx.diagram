@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_new_PM" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_silde_PM" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_type_new_PM" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_Email" Width="1.5" PointX="3.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

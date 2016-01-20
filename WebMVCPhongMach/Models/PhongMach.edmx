@@ -4,7 +4,14 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="XBMuabannhadatbackup_cuaTuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="XBMuabannhadatbackup_cuaTuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Email">
+          <Key>
+            <PropertyRef Name="ID_Email" />
+          </Key>
+          <Property Name="ID_Email" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+        </EntityType>
         <EntityType Name="tbl_menu_PM">
           <Key>
             <PropertyRef Name="ID_menu_PM" />
@@ -49,13 +56,13 @@
           <Property Name="ID_type_new_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityContainer Name="XBMuabannhadatbackup_cuaTuModelStoreContainer">
+          <EntitySet Name="tbl_Email" EntityType="Self.tbl_Email" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_menu_PM" EntityType="Self.tbl_menu_PM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_type_new_PM" EntityType="Self.tbl_type_new_PM" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="XBMuabannhadatbackup_cuaTuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -107,7 +114,15 @@
           <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" />
           <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" />
           <EntitySet Name="tbl_type_new_PM" EntityType="Self.tbl_type_new_PM" />
+          <EntitySet Name="tbl_Email" EntityType="XBMuabannhadatbackup_cuaTuModel.tbl_Email" />
         </EntityContainer>
+        <EntityType Name="tbl_Email">
+          <Key>
+            <PropertyRef Name="ID_Email" />
+          </Key>
+          <Property Name="ID_Email" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -158,6 +173,14 @@
             <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_type_new_PM">
               <MappingFragment StoreEntitySet="tbl_type_new_PM">
                 <ScalarProperty Name="ID_type_new_PM" ColumnName="ID_type_new_PM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Email">
+            <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_Email">
+              <MappingFragment StoreEntitySet="tbl_Email">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ID_Email" ColumnName="ID_Email" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

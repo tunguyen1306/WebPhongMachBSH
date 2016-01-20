@@ -25,6 +25,5 @@ namespace WebMVCPhongMach.Models
         public string Img1_new_PM_ { get; set; }
         public Nullable<System.DateTime> Ceatedtime_new_PM { get; set; }
         public Nullable<int> Type_new_PM { get; set; }
-        public string name { get; set; }
     }
 }

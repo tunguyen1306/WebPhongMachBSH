@@ -48,5 +48,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Email">
+      <EntityTypeMapping TypeName="XBMuabannhadatbackup_cuaTuModel.tbl_Email">
+        <MappingFragment StoreEntitySet="tbl_Email">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ID_Email" ColumnName="ID_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

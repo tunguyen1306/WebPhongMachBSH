@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="XBMuabannhadatbackup_cuaTuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Email">
+    <Key>
+      <PropertyRef Name="ID_Email" />
+    </Key>
+    <Property Name="ID_Email" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+  </EntityType>
   <EntityType Name="tbl_menu_PM">
     <Key>
       <PropertyRef Name="ID_menu_PM" />
@@ -44,6 +51,7 @@
     <Property Name="ID_type_new_PM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityContainer Name="XBMuabannhadatbackup_cuaTuModelStoreContainer">
+    <EntitySet Name="tbl_Email" EntityType="Self.tbl_Email" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_menu_PM" EntityType="Self.tbl_menu_PM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" Schema="dbo" store:Type="Tables" />

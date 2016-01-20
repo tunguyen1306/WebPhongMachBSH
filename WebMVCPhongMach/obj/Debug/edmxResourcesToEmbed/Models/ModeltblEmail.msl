@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nhphompq_phongkhambacsihonModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tbl_Email">
+      <EntityTypeMapping TypeName="nhphompq_phongkhambacsihonModel.tbl_Email">
+        <MappingFragment StoreEntitySet="tbl_Email">
+          <ScalarProperty Name="ID_Email" ColumnName="ID_Email" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

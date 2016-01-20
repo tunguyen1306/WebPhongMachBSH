@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="nhphompq_phongkhambacsihonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.fs_manga_img' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.grid_view_mapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.log_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.mar_project_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="mar_project_detail">
+          <Property Name="id_mar_project" Type="int" />
+          <Property Name="id_store_prod" Type="int" />
+          <Property Name="store_prod_sell_off" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.store_exp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="store_exp_detail">
+          <Property Name="id_store_exp" Type="int" />
+          <Property Name="id_store_prod" Type="int" />
+          <Property Name="store_prod_count" Type="int" />
+          <Property Name="id_store_slot" Type="int" />
+          <Property Name="store_prod_cost" Type="int" />
+          <Property Name="store_prod_shelf" Type="datetime" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.store_imp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="store_imp_detail">
+          <Property Name="id_store_imp" Type="int" />
+          <Property Name="id_store_prod" Type="int" />
+          <Property Name="store_prod_count" Type="int" />
+          <Property Name="id_store_slot" Type="int" />
+          <Property Name="store_prod_cost" Type="int" />
+          <Property Name="store_prod_shelf" Type="datetime" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_data_fixed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_mapped_form' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="sys_mapped_form">
+          <Property Name="ctr_client_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="id_form" Type="int" />
+          <Property Name="mapped_col_code" Type="nvarchar" MaxLength="200" />
+          <Property Name="view_selected" Type="int" />
+          <Property Name="ctr_name" Type="nvarchar" MaxLength="200" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Email">
+    <Key>
+      <PropertyRef Name="ID_Email" />
+    </Key>
+    <Property Name="ID_Email" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_advertising' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_banner' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_comment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_menu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_menu_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_menu_product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_menutop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_quangcao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityContainer Name="nhphompq_phongkhambacsihonModelStoreContainer">
+    <EntitySet Name="tbl_Email" EntityType="Self.tbl_Email" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

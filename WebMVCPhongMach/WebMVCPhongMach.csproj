@@ -187,29 +187,12 @@
     <Compile Include="Controllers\NewOrtherController.cs" />
     <Compile Include="Controllers\NewTodayController.cs" />
     <Compile Include="Controllers\SlideController.cs" />
+    <Compile Include="Controllers\tbl_EmailController.cs" />
     <Compile Include="Controllers\TypeNewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\bh_GiftCode.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\bh_GiftProduct.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\bh_UserGiftCode.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\bh_UserProduct.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ctr_in_form.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ctr_steel.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\DataWeb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -226,64 +209,22 @@
       <DependentUpon>DataWeb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Email.cs" />
-    <Compile Include="Models\form_steel.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\form_store.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\form_store_para.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_auth.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_manga.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_manga_chap.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_manga_img.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_manga_tag.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\fs_manga_type.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\grid_view_mapping.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\log_store_prod.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\mar_project.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
+    <Compile Include="Models\ModeltblEmail.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeltblEmail.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\other_group.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
+    <Compile Include="Models\ModeltblEmail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeltblEmail.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\other_item.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\other_list.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\pct_department.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\pct_employee.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\pct_ticket.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\pct_title.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
+    <Compile Include="Models\ModeltblEmail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeltblEmail.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\PhongMach.Context.cs">
       <AutoGen>True</AutoGen>
@@ -300,122 +241,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PhongMach.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\project_steel.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\so_orther.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\so_orther_detail.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\so_prod_image_detail.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_cate.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_company.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_com_ship.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_com_type.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_contact.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_exp.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_imp.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_prod.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_prod_sku.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_slot.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_stock.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\store_unit.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_company.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_data_fixed.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_fs_help.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_gridview_control.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_group_page.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_info.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_col.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_join.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_operators.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_table.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_type.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_mapped_ty_op.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_page.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sys_store_prod.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblSysUserGroupPage.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblSysUserGroupPageDetail.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblSysUserGroupPagePage.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblSysUserRolePage.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblUser.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblUserCloud.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblUserFriend.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tblUserImg.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
+    <Compile Include="Models\tbl_Email.cs">
+      <DependentUpon>PhongMach.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\tbl_menu_PM.cs">
       <DependentUpon>PhongMach.tt</DependentUpon>
@@ -430,75 +257,6 @@
       <DependentUpon>PhongMach.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UrlFrendly.cs" />
-    <Compile Include="Models\user_steel.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_advertising.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_banner.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_comment.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_menu.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_menu_products.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\wb_products.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_banner.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_chater.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_chater_content.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_content.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_content_other.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_customer.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_department.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_employer.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_list_product.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_menu_root.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_products.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_title.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_tr_menutop.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_tr_menu_product.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_tr_products.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\web_tr_quangcao.cs">
-      <DependentUpon>DataWeb.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -667,6 +425,23 @@
       <DependentUpon>PhongMach.edmx</DependentUpon>
       <LastGenOutput>PhongMach.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\ModeltblEmail.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeltblEmail.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModeltblEmail.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeltblEmail.edmx</DependentUpon>
+      <LastGenOutput>ModeltblEmail.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModeltblEmail.edmx.diagram">
+      <DependentUpon>ModeltblEmail.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ModeltblEmail.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeltblEmail.edmx</DependentUpon>
+      <LastGenOutput>ModeltblEmail.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\PublishMVCPM.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -723,6 +498,11 @@
       <DependentUpon>jquery.validate.min.js</DependentUpon>
     </Content>
     <Content Include="Views\Shared\LayoutDetail.cshtml" />
+    <Content Include="Views\tbl_Email\Create.cshtml" />
+    <Content Include="Views\tbl_Email\Delete.cshtml" />
+    <Content Include="Views\tbl_Email\Details.cshtml" />
+    <Content Include="Views\tbl_Email\Edit.cshtml" />
+    <Content Include="Views\tbl_Email\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
