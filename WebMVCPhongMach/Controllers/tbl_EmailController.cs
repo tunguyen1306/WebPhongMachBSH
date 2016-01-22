@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -19,7 +20,7 @@ namespace WebMVCPhongMach.Controllers
         // GET: tbl_Email
         public ActionResult Index()
         {
-            return View(db.tbl_Email.Where(x=>x.Email.Contains("tunguyen")).ToList().ToPagedList(pageNumber:1,pageSize:100));
+            return View(db.tbl_Email.Where(x => x.Email.Contains("tunguyen.it.dev@gmail.com")).ToList().ToPagedList(pageNumber: 1, pageSize: 100));
             //return View(db.tbl_Email.ToList());
         }
 
@@ -148,10 +149,16 @@ namespace WebMVCPhongMach.Controllers
         }
         public ActionResult SendAll()
         {
-
+           
             if (ModelState.IsValid)
             {
+                //tu23444
+                //hoang84522
                 var email = (from nameemail in db.tbl_Email where nameemail.ID_Email == 23444 select nameemail).ToList();
+                using (var r = new StreamReader(Server.MapPath("~/Content/banlairai.txt")))
+                {
+
+               
                 foreach (var namem in email)
                 {
                     
@@ -160,7 +167,7 @@ namespace WebMVCPhongMach.Controllers
                 mail.To.Add(namem.Email);
                 mail.From = new MailAddress("mailtubenhnhan@gmail.com");
                 mail.Subject = "Tin Nhắn từ bệnh nhân";
-                string Body = ("Tên bệnh nhân: <br><h1>" + "Tu Nguyen" + "</h1><br> Emai bệnh nhân : <h1>" + "tunguyen.it.dev@gmail.com" + "</h1><br>" + " Số điện thoại bệnh nhân : <h1>" + "0987654321" + "</h1><br>" + " Nộ dung tin nhắn : <h1>" + "Test" + "</h1>");
+                string Body = (r.ReadToEnd());
                 mail.Body = Body;
                 mail.IsBodyHtml = true;
                 SmtpClient smtp = new SmtpClient();
@@ -173,10 +180,19 @@ namespace WebMVCPhongMach.Controllers
                 smtp.Send(mail);
                 return RedirectToAction("Index");
                 }
+                }
 
             }
 
             return View();
+        }
+        public ActionResult EmailResult()
+        {
+            return View(db.tbl_Email.ToList());
+        }
+        public ActionResult EmailResultpa(int pagenum=1,int pagesize=10)
+        {
+            return View(db.tbl_Email.ToList().ToPagedList(pagenum,pagesize));
         }
         protected override void Dispose(bool disposing)
         {
