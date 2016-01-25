@@ -163,7 +163,7 @@
     <Property Name="chap_key" Type="nvarchar" MaxLength="250" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.fs_manga_img' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.fs_manga_img' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="fs_manga_img">
     <Key>
       <PropertyRef Name="img_orther" />
@@ -191,7 +191,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.fs_manga_img' does 
     <Property Name="type_status" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.grid_view_mapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.grid_view_mapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="grid_view_mapping">
     <Key>
       <PropertyRef Name="id_mapped" />
@@ -201,7 +201,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.grid_view_mapping' 
     <Property Name="orther" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.log_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.log_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="log_store_prod">
     <Key>
       <PropertyRef Name="id_store_prod" />
@@ -257,7 +257,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.log_store_prod' doe
     <Property Name="mar_project_sell_type" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.mar_project_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.mar_project_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="mar_project_detail">
           <Property Name="id_mar_project" Type="int" />
           <Property Name="id_store_prod" Type="int" />
@@ -448,7 +448,7 @@ warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.mar_project_detail'
     <Property Name="store_exp_cost" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.store_exp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.store_exp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="store_exp_detail">
           <Property Name="id_store_exp" Type="int" />
           <Property Name="id_store_prod" Type="int" />
@@ -469,7 +469,7 @@ warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.store_exp_detail' d
     <Property Name="store_imp_store" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.store_imp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.store_imp_detail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="store_imp_detail">
           <Property Name="id_store_imp" Type="int" />
           <Property Name="id_store_prod" Type="int" />
@@ -534,7 +534,7 @@ warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.store_imp_detail' d
     <Property Name="company_name" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_data_fixed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_data_fixed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="sys_data_fixed">
     <Key>
       <PropertyRef Name="ctr_client_id" />
@@ -598,7 +598,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_data_fixed' doe
     <Property Name="mapped_col_order" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_mapped_form' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_mapped_form' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="sys_mapped_form">
           <Property Name="ctr_client_id" Type="nvarchar" MaxLength="50" />
           <Property Name="id_form" Type="int" />
@@ -663,7 +663,7 @@ warning 6013: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_mapped_form' do
     <Property Name="id_group_page" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.sys_store_prod' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="sys_store_prod">
     <Key>
       <PropertyRef Name="id_store_prod" />
@@ -677,6 +677,14 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_store_prod' doe
     <Property Name="id_store_slot" Type="int" Nullable="false" />
     <Property Name="store_prod_cost" Type="int" Nullable="false" />
     <Property Name="store_prod_shelf" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Email">
+    <Key>
+      <PropertyRef Name="ID_Email" />
+    </Key>
+    <Property Name="ID_Email" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Status" Type="int" />
   </EntityType>
   <EntityType Name="tbl_menu_PM">
     <Key>
@@ -859,7 +867,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.sys_store_prod' doe
     <Property Name="user_pass" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_advertising' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_advertising' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_advertising">
     <Key>
       <PropertyRef Name="id_advertising" />
@@ -872,7 +880,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_advertising' doe
     <Property Name="img_advertising" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_banner' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_banner' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_banner">
     <Key>
       <PropertyRef Name="id_banner" />
@@ -885,7 +893,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_banner' does not
     <Property Name="status_banner" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_comment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_comment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_comment">
     <Key>
       <PropertyRef Name="id_comment" />
@@ -898,7 +906,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_comment' does no
     <Property Name="email" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_menu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_menu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_menu">
     <Key>
       <PropertyRef Name="id_menu" />
@@ -912,7 +920,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_menu' does not h
     <Property Name="menu_links" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_menu_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_menu_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_menu_products">
     <Key>
       <PropertyRef Name="id_menu_products" />
@@ -927,7 +935,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_menu_products' d
     <Property Name="menu_noidung" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.wb_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="wb_products">
     <Key>
       <PropertyRef Name="id_products" />
@@ -1071,7 +1079,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.wb_products' does n
     <Property Name="id_department" Type="int" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_menu_product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_menu_product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="web_tr_menu_product">
     <Key>
       <PropertyRef Name="id_menu_products" />
@@ -1084,7 +1092,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_menu_product
     <Property Name="tomtat_menu_products" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_menutop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_menutop' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="web_tr_menutop">
     <Key>
       <PropertyRef Name="id_menu_top" />
@@ -1097,7 +1105,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_menutop' doe
     <Property Name="order_menu_top" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_products' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="web_tr_products">
     <Key>
       <PropertyRef Name="id_products_tr" />
@@ -1120,7 +1128,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_products' do
     <Property Name="phantram_products" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_quangcao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'nhphompq_phongkhambacsihon.dbo.web_tr_quangcao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="web_tr_quangcao">
     <Key>
       <PropertyRef Name="id_quangcao" />
@@ -1185,6 +1193,7 @@ warning 6002: The table/view 'XBMuabannhadatbackup_cuaTu.dbo.web_tr_quangcao' do
     <EntitySet Name="sys_mapped_ty_op" EntityType="Self.sys_mapped_ty_op" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sys_mapped_type" EntityType="Self.sys_mapped_type" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sys_page" EntityType="Self.sys_page" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Email" EntityType="Self.tbl_Email" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_menu_PM" EntityType="Self.tbl_menu_PM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_new_PM" EntityType="Self.tbl_new_PM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_silde_PM" EntityType="Self.tbl_silde_PM" Schema="dbo" store:Type="Tables" />

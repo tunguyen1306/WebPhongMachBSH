@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><!-- utf-8 works for most cases --><meta name="viewport" content="width=device-width"><!-- Forcing initial-scale shouldn't be necessary --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Use the latest (edge) version of IE rendering engine -->
-	<title>Bán Lai Rai</title>
+	<title>Bán lai rai</title>
 	<!-- the <title> tag shows on email notifications on Android 4.4. -->
 	<style type="text/css">/* ensure that clients don't add any padding or spaces around the email design and allow us to style emails for the entire width of the preview pane */
 		body,
@@ -241,7 +241,7 @@
 							<tbody>
 								<tr>
 									
-									<td class="hh-force-col-center" style="background-color: #29314c;width:100%!important; text-align: center; padding-top: 22px; padding-bottom: 20px;" valign="top"><a href="http://www.facebook.com/banlairai" style="outline: none; text-decoration: none;" target="_blank" title="Nước Hoa Xách Tay Mỹ - Chất Lượng Đảm Bảo"><img alt="Nước Hoa Xách Tay Mỹ - Chất Lượng Đảm Bảo" src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-21-23-52-12_logo.png" style="border:0; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; color: #ed1c24;"  /></a></td>
+									<td class="hh-force-col-center" style="background-color: #29314c;width:100%!important; text-align: center; padding-top: 22px; padding-bottom: 20px;" valign="top"><a href="http://www.facebook.com/banlairai" style="outline: none; text-decoration: none;" target="_blank" title="Nước Hoa Xách Tay Mỹ - Chất Lượng Đảm Bảo"><img alt="Nước Hoa Xách Tay Mỹ - Chất Lượng Đảm Bảo" src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-25-0-28-50_logo.png" style="border:0; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; color: #ed1c24;"  /></a></td>
 								
 								</tr>
 							</tbody>
@@ -258,7 +258,7 @@
 						<table border="0" cellpadding="0" cellspacing="0" width="100%">
 							<tbody>
 								<tr>
-									<td style="padding-bottom: 24px;" valign="top"><img alt="Hình minh họa: BanLaiRai" class="fluid" src="http://admin.phongkhambacsihon.com/fileupload/83/83_2016-01-21-23-52-14_large-image.png" style=" border: 0; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; color: #ed1c24;" width="100%" /></td>
+									<td style="padding-bottom: 24px;" valign="top"><img alt="Hình minh họa: BanLaiRai" class="fluid" src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-25-0-28-54_large-image.png" style=" border: 0; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400; font-size: 14px; color: #ed1c24;" width="100%" /></td>
 								</tr>
 								<tr>
 									<td align="center" style="padding-bottom: 24px; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: bold; font-size: 21px; color: #ff6519;" valign="top">
@@ -290,7 +290,19 @@ Nếu không đúng hoàn tiền 100%</p>
 														</tr>
                                                         <tr>
 															<td align="left" style="padding-left:20px; padding-bottom: 2px;" valign="top" width="24"><img alt=""  src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-21-23-55-19_ic-circle.png" style="margin:0 !important;"  /></td>
-															<td align="left" style="font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: 14px; color: #29314c; padding-bottom: 2px;" valign="top">Giảm 10 % trên tất cả sản phẩm nhân dịp Valentine.</td>
+															<td align="left" style="font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: 14px; color: #29314c; padding-bottom: 2px;" valign="top">Có đầy đủ tất cả các loại nước hoa nguyên seal & Tester.</td>
+                                                           
+                                                            
+														</tr> <tr>
+															<td align="left" style="padding-left:20px; padding-bottom: 2px;" valign="top" width="24"><img alt=""  src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-21-23-55-19_ic-circle.png" style="margin:0 !important;"  /></td>
+															 <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: 14px; color: #29314c; padding-bottom: 2px;" valign="top">Giảm 10 % trên tất cả sản phẩm nhân dịp Valentine.</td>
+                                                           
+                                                            
+														</tr>
+                                                         <tr>
+															<td align="left" style="padding-left:20px; padding-bottom: 2px;" valign="top" width="24"><img alt=""  src="http://admin.phongkhambacsihon.com/fileUpload/83/83_2016-01-21-23-55-19_ic-circle.png" style="margin:0 !important;"  /></td>
+															 <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: 14px; color: #29314c; padding-bottom: 2px;" valign="top">Liên hệ ngay fb hoặc điên thoại đến số <span style="color:#e41b00; font-weight:bold;">0919.556.595 (gặp a.Hoàng)</span> để có giá tốt nhất</td>
+                                                           
                                                             
 														</tr>
                                                         
@@ -311,7 +323,7 @@ Nếu không đúng hoàn tiền 100%</p>
 												<table cellpadding="0" cellspacing="0">
 													<tbody>
 														<tr>
-															<td style=" padding-top: 10px; padding-right: 40px; padding-bottom: 11px; padding-left: 40px;"><a href="https://www.facebook.com/banlairai/?fref=ts" style="text-decoration:none; outline-style: none; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 15px; color: #ffffff;" target="_blank" title="Bán lai rai"><span style="text-decoration: none; color: #ffffff;">XEM THỬ SẢN PHẨM</span></a></td>
+															<td style=" padding-top: 10px; padding-right: 40px; padding-bottom: 11px; padding-left: 40px;"><a href="http://www.facebook.com/banlairai" style="text-decoration:none; outline-style: none; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 700; font-size: 15px; color: #ffffff;" target="_blank" title="Bán lai rai"><span style="text-decoration: none; color: #ffffff;">XEM THỬ SẢN PHẨM</span></a></td>
 														</tr>
                                                         </table>
                                             </tbody>

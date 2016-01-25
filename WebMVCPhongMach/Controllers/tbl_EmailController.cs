@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Web;
 using System.Web.Mvc;
 using PagedList;
 using WebMVCPhongMach.Models;
@@ -15,12 +12,13 @@ namespace WebMVCPhongMach.Controllers
 {
     public class tbl_EmailController : Controller
     {
-        private PhongMachEntities db = new PhongMachEntities();
+        private readonly PhongMachEntities db = new PhongMachEntities();
 
         // GET: tbl_Email
         public ActionResult Index()
         {
-            return View(db.tbl_Email.Where(x => x.Email.Contains("tunguyen.it.dev@gmail.com")).ToList().ToPagedList(pageNumber: 1, pageSize: 100));
+            return
+                View(db.tbl_Email.Where(x => x.Email.Contains("tunguyen.it.dev@gmail.com")).ToList().ToPagedList(1, 100));
             //return View(db.tbl_Email.ToList());
         }
 
@@ -118,82 +116,90 @@ namespace WebMVCPhongMach.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         // [HttpPost, ActionName("Send")]
         //[ValidateAntiForgeryToken]
         public ActionResult Send(int id)
         {
-
             if (ModelState.IsValid)
             {
-                tbl_Email tbl_Email = db.tbl_Email.Find(id);
-                MailMessage mail = new MailMessage();
-                mail.To.Add(tbl_Email.Email);
-                mail.From = new MailAddress("mailtubenhnhan@gmail.com");
-                mail.Subject = "Tin Nhắn từ bệnh nhân";
-                string Body = ("Tên bệnh nhân: <br><h1>" +"Tu Nguyen" + "</h1><br> Emai bệnh nhân : <h1>" +"tunguyen.it.dev@gmail.com" + "</h1><br>" + " Số điện thoại bệnh nhân : <h1>" + "0987654321" + "</h1><br>" + " Nộ dung tin nhắn : <h1>" + "Test" + "</h1>");
-                mail.Body = Body;
-                mail.IsBodyHtml = true;
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential
-                ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
-                smtp.EnableSsl = true;
-                smtp.Send(mail);
-                return RedirectToAction("Index");
-
+                using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                {
+                    tbl_Email tbl_Email = db.tbl_Email.Find(id);
+                    var mail = new MailMessage();
+                    mail.To.Add(tbl_Email.Email);
+                    mail.From = new MailAddress("mailtubenhnhan@gmail.com");
+                    mail.Subject = "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng";
+                    string Body = r.ReadToEnd();
+                    mail.Body = Body;
+                    mail.IsBodyHtml = true;
+                    var smtp = new SmtpClient();
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential
+                        ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                }
             }
 
-            return View();
+          return RedirectToAction("Index");
         }
+
         public ActionResult SendAll()
         {
-           
             if (ModelState.IsValid)
             {
                 //tu23444
                 //hoang84522
-                var email = (from nameemail in db.tbl_Email where nameemail.ID_Email == 23444 select nameemail).ToList();
-                using (var r = new StreamReader(Server.MapPath("~/Content/banlairai.txt")))
-                {
+                List<tbl_Email> email =
+                    (from nameemail in db.tbl_Email
+                       where nameemail.ID_Email >754
+                        select nameemail).ToList();
 
-               
-                foreach (var namem in email)
+                foreach (tbl_Email namem in email)
                 {
-                    
-              
-                MailMessage mail = new MailMessage();
-                mail.To.Add(namem.Email);
-                mail.From = new MailAddress("mailtubenhnhan@gmail.com");
-                mail.Subject = "Tin Nhắn từ bệnh nhân";
-                string Body = (r.ReadToEnd());
-                mail.Body = Body;
-                mail.IsBodyHtml = true;
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential
-                ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
-                smtp.EnableSsl = true;
-                smtp.Send(mail);
-                return RedirectToAction("Index");
+                    using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                    {
+                        var mail = new MailMessage();
+                        mail.To.Add(namem.Email);
+                       
+                        mail.From = new MailAddress("mailtubenhnhan@gmail.com");
+                        mail.Subject = "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng ";
+                        string Body = (r.ReadToEnd());
+                        mail.Body = Body;
+                        mail.IsBodyHtml = true;
+                        var smtp = new SmtpClient();
+                        smtp.Host = "smtp.gmail.com";
+                        smtp.Port = 587;
+                        smtp.UseDefaultCredentials = false;
+                        smtp.Credentials = new NetworkCredential
+                            ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
+                        smtp.EnableSsl = true;
+                        smtp.Send(mail);
+                    }
+                   
                 }
-                }
-
             }
 
-            return View();
+            return RedirectToAction("Index");
         }
+
         public ActionResult EmailResult()
         {
             return View(db.tbl_Email.ToList());
         }
-        public ActionResult EmailResultpa(int pagenum=1,int pagesize=10)
+        public ActionResult EmailTu()
         {
-            return View(db.tbl_Email.ToList().ToPagedList(pagenum,pagesize));
+            return View();
         }
+
+        public ActionResult EmailResultpa(int pagenum = 1, int pagesize = 10)
+        {
+            return View(db.tbl_Email.ToList().ToPagedList(pagenum, pagesize));
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

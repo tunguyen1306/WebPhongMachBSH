@@ -1127,5 +1127,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Email">
+      <EntityTypeMapping TypeName="PhongMachModel.tbl_Email">
+        <MappingFragment StoreEntitySet="tbl_Email">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ID_Email" ColumnName="ID_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
