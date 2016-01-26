@@ -96,6 +96,7 @@
         <EntityTypeShape EntityType="PhongMachModel.web_tr_menutop" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PhongMachModel.web_tr_products" Width="1.5" PointX="10.75" PointY="24.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PhongMachModel.web_tr_quangcao" Width="1.5" PointX="24.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhongMachModel.tbl_Email" Width="1.5" PointX="25.375" PointY="17.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

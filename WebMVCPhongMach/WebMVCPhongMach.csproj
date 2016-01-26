@@ -643,6 +643,7 @@
     <Content Include="Content\js\validation.js" />
     <Content Include="Content\js\www-widgetapi.js" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="DonGia.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
