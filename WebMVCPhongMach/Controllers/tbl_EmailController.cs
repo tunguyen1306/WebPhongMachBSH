@@ -129,7 +129,8 @@ namespace WebMVCPhongMach.Controllers
                     var mail = new MailMessage();
                     mail.To.Add(tbl_Email.Email);
                     mail.From = new MailAddress("mailtubenhnhan@gmail.com");
-                    mail.Subject = "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng";
+                    mail.Subject =
+                        "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng";
                     string Body = r.ReadToEnd();
                     mail.Body = Body;
                     mail.IsBodyHtml = true;
@@ -144,7 +145,7 @@ namespace WebMVCPhongMach.Controllers
                 }
             }
 
-          return RedirectToAction("Index");
+            return RedirectToAction("Index");
         }
 
         public ActionResult SendAll()
@@ -155,31 +156,34 @@ namespace WebMVCPhongMach.Controllers
                 //hoang84522
                 List<tbl_Email> email =
                     (from nameemail in db.tbl_Email
-                       where nameemail.ID_Email >754
+                        where nameemail.ID_Email > 1400
                         select nameemail).ToList();
 
                 foreach (tbl_Email namem in email)
                 {
-                    using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                    if (namem.Email.Contains(",")==false)
                     {
-                        var mail = new MailMessage();
-                        mail.To.Add(namem.Email);
-                       
-                        mail.From = new MailAddress("mailtubenhnhan@gmail.com");
-                        mail.Subject = "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng ";
-                        string Body = (r.ReadToEnd());
-                        mail.Body = Body;
-                        mail.IsBodyHtml = true;
-                        var smtp = new SmtpClient();
-                        smtp.Host = "smtp.gmail.com";
-                        smtp.Port = 587;
-                        smtp.UseDefaultCredentials = false;
-                        smtp.Credentials = new NetworkCredential
-                            ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
-                        smtp.EnableSsl = true;
-                        smtp.Send(mail);
+                        using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                        {
+                            var mail = new MailMessage();
+                            mail.To.Add(namem.Email);
+
+                            mail.From = new MailAddress("mailtubenhnhan@gmail.com");
+                            mail.Subject =
+                                "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng ";
+                            string Body = (r.ReadToEnd());
+                            mail.Body = Body;
+                            mail.IsBodyHtml = true;
+                            var smtp = new SmtpClient();
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential
+                                ("mailtubenhnhan@gmail.com", "Doilanhuthe1");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
                     }
-                   
                 }
             }
 
@@ -190,6 +194,7 @@ namespace WebMVCPhongMach.Controllers
         {
             return View(db.tbl_Email.ToList());
         }
+
         public ActionResult EmailTu()
         {
             return View();

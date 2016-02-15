@@ -63,6 +63,16 @@
         </div>
     </div>
 </div>
+<a id="vandetai" href="@Url.Action("NewOrtherPaging", "NewOrther", new { id = ("Vấn Đề Về Họng").UrlFriendly() + "-" + 1 })">
+    <div class="row-cont cusrowcont">
+
+        <div class="row-title cusrowtitle">Vấn Đề Về Họng</div>
+
+        <div class="row-desc"></div>
+
+
+    </div>
+</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <script>
@@ -70,42 +80,31 @@
        
   
     $(document).ready(function () {
-
       
-        //setTimeout(function() {
-        //    $('cusalick').click(function() {
-        //        console.log('tu');
-        //    });
-
-        //    $("#cusalick").trigger('click');
-           
-        //}, 10000);
+    
         //setTimeout(function () {
-        //    $('#vandehong').click(function () {
+          
+           
+        //    $('vandetai').click(function () {
         //        console.log('tu');
         //    });
 
-        //    $("#vandehong").trigger('click');
+        //    $("#vandetai").trigger('click');
 
-        //}, 20000);
+           
+
+        //}, 40000);
+
         setTimeout(function () {
-            $('cusalick').click(function () {
+
+            $('yt - uix - sessionlink').click(function () {
                 console.log('tu');
             });
 
-            $("#cusalick").trigger('click');
-
-            setTimeout(function () {
-                $('#vandehong').click(function () {
-                    console.log('tu');
-                });
-
-                $("#vandehong").trigger('click');
-
-            }, 10000);
-
+            $(".yt - uix - sessionlink").trigger('click');
 
         }, 20000);
-      
+
+       
     });
 </script>

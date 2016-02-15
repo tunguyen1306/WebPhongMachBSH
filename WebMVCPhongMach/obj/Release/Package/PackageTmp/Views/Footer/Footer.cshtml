@@ -1,5 +1,6 @@
 ﻿
-@model IEnumerable<WebMVCPhongMach.Models.tbl_menu_PM>
+@using WebMVCPhongMach.Models
+@model IEnumerable<tbl_menu_PM>
 <div class="footer-container">
     <div class="container">
         <div class="row">
@@ -11,7 +12,7 @@
                             <h4>Thông tin</h4>
                             <div class="footer-col-content">
                                 <ul>
-                                    @foreach (var item in Model)
+                                    @foreach (tbl_menu_PM item in Model)
                                     {
                                         <li><a href="@item.Link_menu_PM" title="@item.Name_menu_PM">@item.Name_menu_PM</a></li>
                                     }
@@ -30,14 +31,14 @@
                                     <div class="block-content">
                                         <ul class="tags-list">
 
-                                            <li><a style="font-size:75%;" href="#">Tai Mũi Họng</a></li>
-                                            <li><a style="font-size:110%;" href="#">Viêm mũi dị ứng</a></li>
-                                            <li><a style="font-size:145%;" href="#">Viêm họng</a></li>
+                                            <li><a style="font-size: 75%;" href="#">Tai Mũi Họng</a></li>
+                                            <li><a style="font-size: 110%;" href="#">Viêm mũi dị ứng</a></li>
+                                            <li><a style="font-size: 145%;" href="#">Viêm họng</a></li>
 
-                                            <li><a style="font-size:75%;" href="#">Cách phòng viêm mũi dị ứng</a></li>
-                                            <li><a style="font-size:110%;" href="#">phòng khám tai mũi họng</a></li>
+                                            <li><a style="font-size: 75%;" href="#">Cách phòng viêm mũi dị ứng</a></li>
+                                            <li><a style="font-size: 110%;" href="#">phòng khám tai mũi họng</a></li>
 
-                                            <li><a style="font-size:145%;" href="#">phòng khám tai mũi họng uy tín</a></li>
+                                            <li><a style="font-size: 145%;" href="#">phòng khám tai mũi họng uy tín</a></li>
                                         </ul>
 
                                     </div>
@@ -49,7 +50,7 @@
                             <div class="block block-subscribe">
                                 <div id="fb-root"></div>
                                 <script>
-                                    (function (d, s, id) {
+                                    (function(d, s, id) {
                                         var js, fjs = d.getElementsByTagName(s)[0];
                                         if (d.getElementById(id)) return;
                                         js = d.createElement(s);
@@ -73,14 +74,63 @@
 
                         </div>
                         <div class="clear"></div>
-                        
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                        @*https://www.youtube.com/embed/o3XALH6GxNg*@
+                        @*https://www.youtube.com/embed/ndKzmx_vzQU*@
+                        @*<iframe width="700" id="player" height="700" src="https://www.youtube.com/embed/o3XALH6GxNg?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    @*<script>
+        var player = iframe.getElementById('player');
+        player.mute();
+    </script>
+
+    <div id="player"></div>*@
+                        @*<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+                            var tag = document.createElement('script');
+                            tag.src = "http://www.youtube.com/player_api";
+                            var firstScriptTag = document.getElementsByTagName('script')[0];
+                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                            // 3. This function creates an <iframe> (and YouTube player)
+                            //    after the API code downloads.
+                            var player;
+                            function onYouTubePlayerAPIReady() {
+                                player = new YT.Player('player', {
+                                    playerVars: { 'autoplay': 1, 'controls': 1 },
+                                   
+                                    events: {
+                                        'onReady': onPlayerReady
+                                    }
+                                });
+                            }
+
+                            // 4. The API will call this function when the video player is ready.
+                            function onPlayerReady(event) {
+                                //event.target.mute();
+                            }
+                            
+                            //$(document).ready(function () {
+                            //    setTimeout(function () {
+
+                            //        $('yt - uix - sessionlink').click(function () {
+                            //            console.log('tu');
+                            //        });
+
+                            //        $(".yt - uix - sessionlink").trigger('click');
+
+                            //    }, 20000);
+
+
+                            //});
+                          
+                        </script>*@
                     </div>
                     <div class="footer-bottom">
                         <address>
                             &copy;
                             <script type="text/javascript">
-                                            var mdate = new Date();
-                                            document.write(mdate.getFullYear());
+                                var mdate = new Date();
+                                document.write(mdate.getFullYear());
                             </script>Tunguyen.it.dev@gmail.com
                         </address>
                         <div class="clear"></div>

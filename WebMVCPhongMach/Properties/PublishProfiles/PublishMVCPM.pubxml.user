@@ -100,7 +100,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/20/2015 15:24:57</publishTime>
     </File>
     <File Include="bin/WebMVCPhongMach.dll">
-      <publishTime>01/29/2016 11:31:50</publishTime>
+      <publishTime>02/15/2016 09:56:01</publishTime>
     </File>
     <File Include="Content/bacsihon.txt">
       <publishTime>01/25/2016 01:07:25</publishTime>
@@ -616,7 +616,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 23:35:46</publishTime>
     </File>
     <File Include="Views/Default/DefaultPaging.cshtml">
-      <publishTime>01/29/2016 11:31:40</publishTime>
+      <publishTime>02/03/2016 10:17:36</publishTime>
     </File>
     <File Include="Views/Detail/Detail.cshtml">
       <publishTime>01/13/2016 23:56:46</publishTime>
@@ -646,7 +646,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/25/2016 00:35:08</publishTime>
     </File>
     <File Include="Views/Footer/Footer.cshtml">
-      <publishTime>12/29/2015 00:38:13</publishTime>
+      <publishTime>02/03/2016 10:26:30</publishTime>
     </File>
     <File Include="Views/Header/Header.cshtml">
       <publishTime>12/30/2015 16:03:42</publishTime>
@@ -670,7 +670,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2016 18:35:02</publishTime>
     </File>
     <File Include="Views/NewOrther/NewOrtherPaging.cshtml">
-      <publishTime>01/29/2016 11:21:03</publishTime>
+      <publishTime>02/03/2016 10:21:23</publishTime>
     </File>
     <File Include="Views/NewToday/NewToday.cshtml">
       <publishTime>01/07/2016 18:35:03</publishTime>
@@ -712,7 +712,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2016 23:44:26</publishTime>
     </File>
     <File Include="Views/TypeNew/TypeNew.cshtml">
-      <publishTime>01/29/2016 00:41:44</publishTime>
+      <publishTime>01/29/2016 20:07:47</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>12/22/2015 21:53:21</publishTime>
