@@ -156,7 +156,7 @@ namespace WebMVCPhongMach.Controllers
                 //hoang84522
                 List<tbl_Email> email =
                     (from nameemail in db.tbl_Email
-                        where nameemail.ID_Email > 1400
+                        
                         select nameemail).ToList();
 
                 foreach (tbl_Email namem in email)
