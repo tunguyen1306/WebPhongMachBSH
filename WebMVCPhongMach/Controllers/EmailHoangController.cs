@@ -155,7 +155,7 @@ namespace WebMVCPhongMach.Controllers
                 //hoang84522
                 List<tbl_Email> email =
                     (from nameemail in db.tbl_Email
-                     where nameemail.ID_Email > 754
+                     //where nameemail.ID_Email > 754
                      select nameemail).ToList();
 
                 foreach (tbl_Email namem in email)
@@ -164,23 +164,26 @@ namespace WebMVCPhongMach.Controllers
                     {
                         if (namem!=null)
                         {
-                            
-                       
-                        var mail = new MailMessage();
-                        mail.To.Add(namem.Email);
-                        mail.From = new MailAddress("Banlairai@gmail.com");
-                        mail.Subject = "Nước hoa xách tay Mỹ. Cam kết hàng chính hãng - Nếu không đúng hoàn tiền 100%";
-                        string Body = (r.ReadToEnd());
-                        mail.Body = Body;
-                        mail.IsBodyHtml = true;
-                        var smtp = new SmtpClient();
-                        smtp.Host = "smtp.gmail.com";
-                        smtp.Port = 587;
-                        smtp.UseDefaultCredentials = false;
-                        smtp.Credentials = new NetworkCredential
-                            ("Banlairai@gmail.com", "@aA123456");
-                        smtp.EnableSsl = true;
-                        smtp.Send(mail);
+                            if (namem.Email.Contains(",") == false)
+                            {
+
+                                var mail = new MailMessage();
+                                mail.To.Add(namem.Email);
+                                mail.From = new MailAddress("Banlairai@gmail.com");
+                                mail.Subject =
+                                    "Nước hoa xách tay Mỹ. Cam kết hàng chính hãng - Nếu không đúng hoàn tiền 100%";
+                                string Body = (r.ReadToEnd());
+                                mail.Body = Body;
+                                mail.IsBodyHtml = true;
+                                var smtp = new SmtpClient();
+                                smtp.Host = "smtp.gmail.com";
+                                smtp.Port = 587;
+                                smtp.UseDefaultCredentials = false;
+                                smtp.Credentials = new NetworkCredential
+                                    ("Banlairai@gmail.com", "@aA123456");
+                                smtp.EnableSsl = true;
+                                smtp.Send(mail);
+                            }
                         }
                     }
                 }
