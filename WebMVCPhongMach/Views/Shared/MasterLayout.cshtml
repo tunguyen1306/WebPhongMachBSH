@@ -90,7 +90,7 @@
 
         ga('create', 'UA-71594023-1', 'auto');
         ga('send', 'pageview');
-
+       
     </script>
 
 </head>
@@ -212,9 +212,26 @@
     <script type="text/javascript" src="/Content/js/jquery-ui-1-10-4.js"></script>
     <script type="text/javascript" src="/Content/js/ajaxlogin.js"></script>
     <script type="text/javascript" src="/Content/js/msrp.js"></script>
-    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-
+    @*<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>*@
+    <script>
+        jQuery(document).ready(function () {
+            if (jQuery('#camera_wrap').length > 0) {
+                jQuery('#camera_wrap').camera({
+                    alignmen: 'topCenter',
+                    height: '29.16%',
+                    minHeight: '100px',
+                    loader: false,
+                    navigation: true,
+                    fx: 'simpleFade',
+                    navigationHover: false,
+                    thumbnails: false,
+                    playPause: false,
+                    pagination: false,
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
