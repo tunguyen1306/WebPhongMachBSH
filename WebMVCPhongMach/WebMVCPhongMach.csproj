@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -177,7 +178,6 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\DetailTypeController.cs" />
-    <Compile Include="Controllers\EmailHoangController.cs" />
     <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HeaderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -188,7 +188,6 @@
     <Compile Include="Controllers\NewOrtherController.cs" />
     <Compile Include="Controllers\NewTodayController.cs" />
     <Compile Include="Controllers\SlideController.cs" />
-    <Compile Include="Controllers\tbl_EmailController.cs" />
     <Compile Include="Controllers\TypeNewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -29,6 +29,6 @@ namespace WebMVCPhongMach.Models
         public virtual DbSet<tbl_new_PM> tbl_new_PM { get; set; }
         public virtual DbSet<tbl_silde_PM> tbl_silde_PM { get; set; }
         public virtual DbSet<tbl_type_new_PM> tbl_type_new_PM { get; set; }
-        public virtual DbSet<tbl_Email> tbl_Email { get; set; }
+        //public virtual DbSet<tbl_Email> tbl_Email { get; set; }
     }
 }

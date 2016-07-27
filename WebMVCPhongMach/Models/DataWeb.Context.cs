@@ -116,6 +116,6 @@ namespace WebMVCPhongMach.Models
         public virtual DbSet<web_tr_menutop> web_tr_menutop { get; set; }
         public virtual DbSet<web_tr_products> web_tr_products { get; set; }
         public virtual DbSet<web_tr_quangcao> web_tr_quangcao { get; set; }
-        public virtual DbSet<tbl_Email> tbl_Email { get; set; }
+        //public virtual DbSet<tbl_Email> tbl_Email { get; set; }
     }
 }

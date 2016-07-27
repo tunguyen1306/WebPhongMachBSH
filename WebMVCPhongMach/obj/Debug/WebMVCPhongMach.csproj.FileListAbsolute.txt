@@ -181,3 +181,6 @@ D:\Dropbox\Cong Ty\WebSite\WebPhongMachBacSiHon\WebMVCPhongMach\bin\Microsoft.Ow
 D:\Dropbox\Cong Ty\WebSite\WebPhongMachBacSiHon\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.csprojResolveAssemblyReference.cache
 D:\Dropbox\Cong Ty\WebSite\WebPhongMachBacSiHon\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.dll
 D:\Dropbox\Cong Ty\WebSite\WebPhongMachBacSiHon\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.pdb
+D:\Dropbox\Cong Ty\PhongKham\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.csprojResolveAssemblyReference.cache
+D:\Dropbox\Cong Ty\PhongKham\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.dll
+D:\Dropbox\Cong Ty\PhongKham\WebMVCPhongMach\obj\Debug\WebMVCPhongMach.pdb
