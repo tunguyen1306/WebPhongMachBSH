@@ -188,6 +188,7 @@
     <Compile Include="Controllers\NewOrtherController.cs" />
     <Compile Include="Controllers\NewTodayController.cs" />
     <Compile Include="Controllers\SlideController.cs" />
+    <Compile Include="Controllers\tbl_EmailController.cs" />
     <Compile Include="Controllers\TypeNewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -642,6 +643,7 @@
     <Content Include="Content\js\validation.js" />
     <Content Include="Content\js\www-widgetapi.js" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\refeshtv.txt" />
     <Content Include="DonGia.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />

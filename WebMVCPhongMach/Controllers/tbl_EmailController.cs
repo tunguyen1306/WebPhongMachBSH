@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
@@ -123,30 +124,30 @@ namespace WebMVCPhongMach.Controllers
         {
             if (ModelState.IsValid)
             {
-                using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
                 {
                     tbl_Email tbl_Email = db.tbl_Email.Find(id);
                     var mail = new MailMessage();
                     mail.To.Add(tbl_Email.Email);
-                    mail.From = new MailAddress("admin@phongkhambacsihon.com");
-                    mail.Subject =
-                        "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng ";
-                    string Body = (r.ReadToEnd());
+                    mail.From = new MailAddress("tien131091@gmail.com");
+                    mail.Subject = "Refresh TV vừa tải lên video";
+                    string Body = r.ReadToEnd();
                     mail.Body = Body;
                     mail.IsBodyHtml = true;
                     var smtp = new SmtpClient();
-                    smtp.Host = "phongkhambacsihon.com";
-                    smtp.Port = 25;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new NetworkCredential
-                        ("admin@phongkhambacsihon.com", "Doilanhuthe1");
-
+                        ("tien131091@gmail.com", "Doilanhuthe1");
+                    smtp.EnableSsl = true;
                     smtp.Send(mail);
                 }
             }
 
             return RedirectToAction("Index");
         }
+
 
         public ActionResult SendAll()
         {
@@ -157,31 +158,78 @@ namespace WebMVCPhongMach.Controllers
                 //hoang84522
                 List<tbl_Email> email =
                     (from nameemail in db.tbl_Email
-                     
+                     where nameemail.ID_Email < 1000
                         select nameemail).ToList();
 
                 foreach (tbl_Email namem in email)
                 {
                     if (namem.Email.Contains(",")==false)
                     {
-                        using (var r = new StreamReader(Server.MapPath("~/Content/bacsihon.txt")))
+                        using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
+                        {
+                            try
+                            {
+                                var mail = new MailMessage();
+                                mail.To.Add(namem.Email);
+                                mail.From = new MailAddress("tien131091@gmail.com");
+                                mail.Subject = "Refresh TV vừa tải lên video";
+                                string Body = r.ReadToEnd();
+                                mail.Body = Body;
+                                mail.IsBodyHtml = true;
+                                var smtp = new SmtpClient();
+                                smtp.Host = "smtp.gmail.com";
+                                smtp.Port = 587;
+                                smtp.UseDefaultCredentials = false;
+                                smtp.Credentials = new NetworkCredential
+                                    ("tien131091@gmail.com", "Doilanhuthe1");
+                                smtp.EnableSsl = true;
+                                smtp.Send(mail);
+                            }
+                            catch (Exception)
+                            {
+                                
+                                throw;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
+        public ActionResult SendAll1()
+        {
+            if (ModelState.IsValid)
+            {
+
+                //tu23444
+                //hoang84522
+                List<tbl_Email> email =
+                    (from nameemail in db.tbl_Email
+                     where nameemail.ID_Email > 8000   &&   nameemail.ID_Email < 9000
+                     select nameemail).ToList();
+
+                foreach (tbl_Email namem in email)
+                {
+                    if (namem.Email.Contains(",") == false)
+                    {
+                        using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
                         {
                             var mail = new MailMessage();
                             mail.To.Add(namem.Email);
-
-                            mail.From = new MailAddress("admin@phongkhambacsihon.com");
-                            mail.Subject =
-                                "Phòng khám tai mũi họng bác sĩ Hớn Chuyên khám, tư vấn và điều trị các bệnh lý tai mũi họng ";
-                            string Body = (r.ReadToEnd());
+                            mail.From = new MailAddress("refeshtv@gmail.com");
+                            mail.Subject = "Refresh TV vừa tải lên video";
+                            string Body = r.ReadToEnd();
                             mail.Body = Body;
                             mail.IsBodyHtml = true;
                             var smtp = new SmtpClient();
-                            smtp.Host = "phongkhambacsihon.com";
-                            smtp.Port = 25;
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.Port = 587;
                             smtp.UseDefaultCredentials = false;
                             smtp.Credentials = new NetworkCredential
-                                ("admin@phongkhambacsihon.com", "Doilanhuthe1");
-                           
+                                ("refeshtv@gmail.com", "Doilanhuthe1");
+                            smtp.EnableSsl = true;
                             smtp.Send(mail);
                         }
                     }
@@ -190,7 +238,126 @@ namespace WebMVCPhongMach.Controllers
 
             return RedirectToAction("Index");
         }
+        public ActionResult SendAll2()
+        {
+            if (ModelState.IsValid)
+            {
 
+                //tu23444
+                //hoang84522
+                List<tbl_Email> email =
+                    (from nameemail in db.tbl_Email
+                     where nameemail.ID_Email > 7000 && nameemail.ID_Email < 8000
+                     select nameemail).ToList();
+
+                foreach (tbl_Email namem in email)
+                {
+                    if (namem.Email.Contains(",") == false)
+                    {
+                        using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
+                        {
+                            var mail = new MailMessage();
+                            mail.To.Add(namem.Email);
+                            mail.From = new MailAddress("tantu1306@gmail.com");
+                            mail.Subject = "Refresh TV vừa tải lên video";
+                            string Body = r.ReadToEnd();
+                            mail.Body = Body;
+                            mail.IsBodyHtml = true;
+                            var smtp = new SmtpClient();
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential
+                                ("tantu1306@gmail.com", "Doilanhuthe1");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
+                    }
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
+        public ActionResult SendAll3()
+        {
+            if (ModelState.IsValid)
+            {
+
+                //tu23444
+                //hoang84522
+                List<tbl_Email> email =
+                    (from nameemail in db.tbl_Email
+                     where nameemail.ID_Email > 6000 && nameemail.ID_Email < 7000
+                     select nameemail).ToList();
+
+                foreach (tbl_Email namem in email)
+                {
+                    if (namem.Email.Contains(",") == false)
+                    {
+                        using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
+                        {
+                            var mail = new MailMessage();
+                            mail.To.Add(namem.Email);
+                            mail.From = new MailAddress("mailorderthung@gmail.com");
+                            mail.Subject = "Refresh TV vừa tải lên video";
+                            string Body = r.ReadToEnd();
+                            mail.Body = Body;
+                            mail.IsBodyHtml = true;
+                            var smtp = new SmtpClient();
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential
+                                ("mailorderthung@gmail.com", "a1234@1234");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
+                    }
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
+        public ActionResult SendAll4()
+        {
+            if (ModelState.IsValid)
+            {
+
+                //tu23444
+                //hoang84522
+                List<tbl_Email> email =
+                    (from nameemail in db.tbl_Email
+                     where nameemail.ID_Email > 5000 && nameemail.ID_Email < 6000
+                     select nameemail).ToList();
+
+                foreach (tbl_Email namem in email)
+                {
+                    if (namem.Email.Contains(",") == false)
+                    {
+                        using (var r = new StreamReader(Server.MapPath("~/Content/refeshtv.txt")))
+                        {
+                            var mail = new MailMessage();
+                            mail.To.Add(namem.Email);
+                            mail.From = new MailAddress("quocminh1306@gmail.com");
+                            mail.Subject = "Refresh TV vừa tải lên video";
+                            string Body = r.ReadToEnd();
+                            mail.Body = Body;
+                            mail.IsBodyHtml = true;
+                            var smtp = new SmtpClient();
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential
+                                ("quocminh1306@gmail.com", "a1234@1234");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
+                    }
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
         public ActionResult EmailResult()
         {
             return View(db.tbl_Email.ToList());

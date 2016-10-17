@@ -25,6 +25,6 @@ namespace WebMVCPhongMach.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        //public virtual DbSet<tbl_Email> tbl_Email { get; set; }
+        public virtual DbSet<tbl_Email> tbl_Email { get; set; }
     }
 }

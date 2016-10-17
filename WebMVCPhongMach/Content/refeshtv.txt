@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+
+
+
+
+    <table width="680" bgcolor="#f0f0f0" align="center" valign="top" cellspacing="0" cellpadding="0" border="0">
+
+        <tbody>
+            <tr>
+                <td width="40"></td>
+                <td width="600">
+                    <table width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table width="600" height="60" align="center" valign="center" bgcolor="#3c3c3c" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td width="16"></td>
+                                                <td width="584" height="60" valign="center">
+                                                    <img width="75" height="30" src="https://ci4.googleusercontent.com/proxy/T5uPqZv_dr3uRFVbkbxg-IK4Z0yzSYjzQ-UfRgzJPjEpb9KRSRgVAoHX_SLS2j2O4mlytsb3CmE9YFwbOJk75qVOF54SqmhgWcgGauI=s0-d-e1-ft#http://www.gstatic.com/youtube/img/email/email_logo.png" border="0" style="display:block" class="CToWUd">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td style="max-height:0px;font-size:0"><hr width="600" style="min-height:0px;border:none;border-color:#f0f0f0;padding:0px;margin:0px"></td></tr>
+                            <tr><td height="30"></td></tr>
+                            <tr>
+                                <td>
+                                    <table width="600" align="center" valign="center" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span style="display:none!important;width:0;min-height:0;color:transparent">
+                                                        &nbsp;
+                                                        &nbsp;<span>
+                                                            &nbsp; &nbsp;<span>
+                                                                &nbsp; &nbsp; &nbsp;<span>
+                                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                    &nbsp; &nbsp; &nbsp;
+                                                                </span>
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp;
+                                                            </span>
+                                                            &nbsp;
+                                                        </span>
+                                                    </span>
+                                                    <table width="600" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="font-family:arial,Arial,sans-serif;font-size:20px;line-height:24px;letter-spacing:0px;font-weight:bold;color:#222222;text-decoration:none">
+                                                                    <a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%3Ffeature%3Dem-uploademail" style="text-decoration:none;color:#468aca" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%253Ffeature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNF5RW4jy_LQKEf9OhQrPPE2TdymYA">Refresh TV</a> đã tải lên<a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/watch%3Fv%3D4OnqFxQXYvQ%26feature%3Dem-uploademail" style="text-decoration:none;color:#468aca" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/watch%253Fv%253D4OnqFxQXYvQ%2526feature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNGzIlAqtaMA0vneHO2XUq7n0mPtRQ"> Cười không nhặt được mòm</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table height="20" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="20"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="600" align="center" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td colspan="3">
+                                                                    <a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/watch%3Fv%3D4OnqFxQXYvQ%26feature%3Dem-uploademail" style="text-decoration:none;display:block" class="nonplayable" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/watch%253Fv%253D4OnqFxQXYvQ%2526feature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNGzIlAqtaMA0vneHO2XUq7n0mPtRQ">
+                                                                        <img src="https://ci6.googleusercontent.com/proxy/_aBVaATKpKas7iRXUwU2aSGYoQ9jyonyv45CUf7a_hXKnB93Fy3TBqlLHvfPiZKncqlb1Oxpy8q2h2Uy8UXylBKxEamSsAfDHbh4OV9guIBz2eqPq6rwQ9AWKwy1mMhDX3n7hFwJ8q0vzMlk36SN3p2DjN7j3kZfp3zVtOjA36Ww2otykroWq1I=s0-d-e1-ft#http://i.ytimg.com/vi/4OnqFxQXYvQ/hqdefault.jpg?w=480&amp;h=270&amp;feature=em-uploademail&amp;sigh=rhW7k8eDkltufNSmGwSEEcl1eYM" width="600" height="332" border="0" class="CToWUd">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="20"></td>
+                                                                <td>
+                                                                    <table width="560" cellspacing="0" cellpadding="0" border="0" style="table-layout:fixed">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table height="20" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="20"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/watch%3Fv%3D4OnqFxQXYvQ%26feature%3Dem-uploademail" style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/watch%253Fv%253D4OnqFxQXYvQ%2526feature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNGzIlAqtaMA0vneHO2XUq7n0mPtRQ">
+                                                                                            <span valign="center" style="font-family:arial,Arial,sans-serif;font-size:15px;color:#222222;line-height:15px;font-weight:bold">
+                                                                                                Cười không nhặt được mòm 
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table height="14" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td width="560">
+                                                                                    <table width="100%" height="20" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td width="20" height="20">
+                                                                                                    <a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%3Ffeature%3Dem-uploademail" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%253Ffeature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNF5RW4jy_LQKEf9OhQrPPE2TdymYA">
+                                                                                                        <img src="https://lh3.googleusercontent.com/-tp07cxeOgmI/AAAAAAAAAAI/AAAAAAAAAAA/Urm9CwIy_Cc/s50/photo.jpg" width="20" height="20" style="display:block" border="0" class="CToWUd">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td width="12"></td>
+                                                                                                <td valign="center">
+                                                                                                    <a href="http://www.youtube.com/attribution_link?a=ocxrVWBjC0I&amp;u=/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%3Ffeature%3Dem-uploademail" style="font-family:arial,Arial,sans-serif;font-size:12px;color:#222222;line-height:15px;letter-spacing:0px;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://www.youtube.com/attribution_link?a%3DocxrVWBjC0I%26u%3D/channel/UChR3q1xwFahJ_YL0Lq9WfmQ%253Ffeature%253Dem-uploademail&amp;source=gmail&amp;ust=1469762504178000&amp;usg=AFQjCNF5RW4jy_LQKEf9OhQrPPE2TdymYA">
+                                                                                                        Refresh TV
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                                <td align="right"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table height="14" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="14"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td width="560">
+                                                                                    <div style="font-family:arial,Arial,sans-serif;font-size:13px;color:#222222;line-height:15px;display:inline;word-wrap:break-word">
+                                                                                        Cười không nhặt được mòm
+                                                                                       
+                                                                                        Những em bé hài hước nhất 2016 
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table height="20" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td height="20"></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="20"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table height="30" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="color:#999999;font-size:13px;line-height:15px;font-family:arial,Arial,sans-serif;letter-spacing:0px;text-decoration:none">
+                                                    © 2016 YouTube, LLC 901 Cherry Ave, San Bruno, CA 94066
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table height="18" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="18"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:#999999;font-size:13px;line-height:15px;font-family:arial,Arial,sans-serif;letter-spacing:0px;word-wrap:break-word">
+                                                    Email này được gửi tới bạn vì bạn chọn nhận cập nhật từ Refresh TV.   <a href="https://youtu.be/4OnqFxQXYvQ" style="text-decoration:none;color:#1b7fcc" target="_blank" data-saferedirecturl="https://youtu.be/4OnqFxQXYvQ">Refresh TV</a>.  Nếu bạn không muốn nhận những cập nhật này nữa, bạn có thể<a href="https://youtu.be/4OnqFxQXYvQ" style="text-decoration:none;color:#1b7fcc" target="_blank" data-saferedirecturl="https://youtu.be/4OnqFxQXYvQ">hủy đăng ký ở đây.</a>.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table height="30" cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="30"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td width="40"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
